@@ -3,6 +3,7 @@
     "displayName": "Su-Assembly Syntax Highlighter",
     "description": "Extensión para habilitar _syntax highlighting_ en arqui :D",
     "version": "0.0.1",
+    "publisher": "3rdPix",
     "engines": {
       "vscode": "^1.60.0"
     },

@@ -1,0 +1,44 @@
+{
+    "scopeName": "source.suasm",
+    "name": "Su-Assembly",
+    "patterns": [
+      {
+        "name": "keyword.instruction.su-assembly",
+        "match": "\\b(MOV|ADD|SUB|AND|OR|XOR|NOT|SHL|SHR|INC|DEC|CMP|JMP|JEQ|JNE|NOP|JGT|JGE|JLT|JLE|JCR)\\b"
+      },
+      {
+        "name": "comment.line.su-assembly",
+        "begin": "(//|;)",
+        "end": "$"
+      },
+      {
+        "name": "string.su-assembly",
+        "match": "\\b(PUSH|POP|CALL|RET)\\b"
+      },
+      {
+        "name": "constant.character.escape.su-assembly",
+        "match": "\\b(A|B)\\b"
+      },
+      {
+        "name": "punctuation.parenthesis.su-assembly",
+        "match": "[()]"
+      },
+      {
+        "name": "constant.su-assembly",
+        "match": "^\\s*(DATA|CODE):\\s*"
+      },
+      {
+        "name": "entity.name.function.su-assembly",
+        "match": "^(?!DATA:|CODE:)\\s*\\b([a-zA-Z_][a-zA-Z0-9_]*):"
+      },
+      {
+        "name": "variable.data.su-assembly",
+        "match": "(?<=^DATA:\\s*)([a-zA-Z_][a-zA-Z0-9_]*)(?=\\s+)"
+      },
+    {
+      "name": "constant.numeric.su-assembly",
+      "match": "\\b((0x[0-9A-Fa-f]+)|(0b[01]+)|(\\d+[d]?)|([01]+b)|([0-9A-Fa-f]+h))\\b"
+    }
+    ]
+  }
+  

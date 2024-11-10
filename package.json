@@ -1,0 +1,37 @@
+{
+    "name": "suasm",
+    "displayName": "Su-Assembly Syntax Highlighter",
+    "description": "Extensión para habilitar _syntax highlighting_ en arqui :D",
+    "version": "0.0.1",
+    "engines": {
+      "vscode": "^1.60.0"
+    },
+    "publisher": "3rdPix",
+    "icon": "images/su.png",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/3rdPix/vscode-suassembly-syntax-highlighter"
+    },
+    "bugs": {
+        "type": "git",
+        "url": "https://github.com/3rdPix/vscode-suassembly-syntax-highlighter/issues"
+    },
+    "categories": ["Programming Languages", "Language Packs"],
+    "contributes": {
+      "languages": [
+        {
+          "id": "suasm",
+          "aliases": ["Su-Assembly", "Su-Asm"],
+          "extensions": [".suasm"],
+          "configuration": "./language-configuration.json"
+        }
+      ],
+      "grammars": [
+        {
+          "language": "suasm",
+          "scopeName": "source.suasm",
+          "path": "./syntaxes/suasm.tmLanguage.json"
+        }
+      ]
+    }
+  }

@@ -1,2 +1,5 @@
 # vscode-suassembly-syntax-highlighter
-Syntax highlighter para el lenguaje Su-Assembly
+
+Un simple pero útil _syntax highlighter_ para programar en el _assembly_ especial que, por motivos obvios, asumo con el nombre **Su-Assembly**. Afecta a los archivos con extensión `.suasm`.
+
+![muestra](images/muestra.png)

@@ -70,5 +70,59 @@
         "body": "CMP ${1:A}, ${2:B}",
         "description": "Compara dos valores (aka los resta) actualizando solo el registro Status",
         "scope": "source.suasm"
+    },
+    "JMP": {
+        "prefix": "JMP",
+        "body": "JMP ${1:label}",
+        "description": "Salta incondicionalmente a la dirección asociada al label",
+        "scope": "source.suasm"
+    },
+    "JEQ": {
+        "prefix": "JEQ",
+        "body": "JEQ ${1:label}",
+        "description": "Salta al label si se cumple z = 1 (si la última instrucción es una comparación, esto se cumple si son iguales)",
+        "scope": "source.suasm"
+    },
+    "JNE": {
+        "prefix": "JNE",
+        "body": "JNE ${1:label}",
+        "description": "Salta al label si se cumple z = 0 (si la última instrucción es una comparación, esto se cumple si no son iguales)",
+        "scope": "source.suasm"
+    },
+    "nop": {
+        "prefix": "NOP",
+        "body": "NOP",
+        "description": "Instrucción placeholder, no hace nada",
+        "scope": "source.suasm"
+    },
+    "jgt": {
+        "prefix": "JGT",
+        "body": "JGT ${1:label}",
+        "description": "Salta al label si se cumple n=0 y z=0",
+        "scope": "source.suasm"
+    },
+    "jge": {
+        "prefix": "JGE",
+        "body": "JGE ${1:label}",
+        "description": "Salta al label si se cumple n=0",
+        "scope": "source.suasm"
+    },
+    "jlt": {
+        "prefix": "JLT",
+        "body": "JLT ${1:label}",
+        "description": "Salta al label si se cumple n=1",
+        "scope": "source.suasm"
+    },
+    "jle": {
+        "prefix": "JLE",
+        "body": "JLE ${1:label}",
+        "description": "Salta al label si se cumple n=1 ó z=1",
+        "scope": "source.suasm"
+    },
+    "jcr": {
+        "prefix": "JCR",
+        "body": "JCR ${1:label}",
+        "description": "Salta al label si se cumple c=1",
+        "scope": "source.suasm"
     }
 }

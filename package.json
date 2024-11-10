@@ -7,7 +7,6 @@
     "engines": {
       "vscode": "^1.60.0"
     },
-    "publisher": "3rdPix",
     "icon": "images/su.png",
     "repository": {
         "type": "git",

@@ -1,5 +1,6 @@
 name: build porque no funciona marketplace
-
+permissions:
+  contents: write
 on:
   push:
     tags:

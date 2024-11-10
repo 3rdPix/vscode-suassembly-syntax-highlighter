@@ -1,0 +1,74 @@
+{
+    "mov": {
+        "prefix": "MOV",
+        "body": "MOV ${1:A}, ${2:B}",
+        "description": "Mover un valor desde un registro, hacia un registro, o desde una dirección de memoria hacia un registro.",
+        "scope": "source.suasm"
+    },
+    "add": {
+        "prefix": "ADD",
+        "body": "ADD ${1:A}, ${2:B}",
+        "description": "Sumar los valores de dos registros, o un registro y un literal.",
+        "scope": "source.suasm"
+    },
+    "sub": {
+        "prefix": "SUB",
+        "body": "SUB ${1:A}, ${2:B}",
+        "description": "Restar los valores de dos registros, o el registro A y un literal",
+        "scope": "source.suasm"
+    },
+    "and": {
+        "prefix": "AND",
+        "body": "AND ${1:A}, ${2:B}",
+        "description": "Calcular un AND lógico",
+        "scope": "source.suasm"
+    },
+    "or": {
+        "prefix": "OR",
+        "body": "OR ${1:A}, ${2:B}",
+        "description": "Calcular un OR lógico",
+        "scope": "source.suasm"
+    },
+    "xor": {
+        "prefix": "XOR",
+        "body": "XOR ${1:A}, ${2:B}",
+        "description": "Caclular un XOR lógico",
+        "scope": "source.suasm"
+    },
+    "not": {
+        "prefix": "NOT",
+        "body": "NOT ${1:A}",
+        "description": "Complemento a uno.",
+        "scope": "source.suasm"
+    },
+    "shl": {
+        "prefix": "SHL",
+        "body": "SHL ${1:A}",
+        "description": "Multiplicar por 2",
+        "scope": "source.suasm"
+    },
+    "shr": {
+        "prefix": "SHR",
+        "body": "SHR ${1:A}",
+        "description": "Dividir por 2",
+        "scope": "source.suasm"
+    },
+    "inc": {
+        "prefix": "INC",
+        "body": "INC ${1:A}",
+        "description": "Suma 1 al registro indicado",
+        "scope": "source.suasm"
+    },
+    "dec": {
+        "prefix": "DEC",
+        "body": "DEC A",
+        "description": "Resta 1 al registro A",
+        "scope": "source.suasm"
+    },
+    "cmp": {
+        "prefix": "CMP",
+        "body": "CMP ${1:A}, ${2:B}",
+        "description": "Compara dos valores (aka los resta) actualizando solo el registro Status",
+        "scope": "source.suasm"
+    }
+}

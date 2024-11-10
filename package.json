@@ -32,6 +32,12 @@
           "scopeName": "source.suasm",
           "path": "./syntaxes/suasm.tmLanguage.json"
         }
-      ]
+      ],
+      "snippets": [
+            {
+                "language": "suasm",
+                "path": "./snippets/snippets.json"
+            }
+        ]
     }
   }

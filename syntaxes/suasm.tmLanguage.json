@@ -17,7 +17,7 @@
       },
       {
         "name": "constant.character.escape.su-assembly",
-        "match": "\\b(A|B)\\b"
+        "match": "\\b(A|B|C|D)\\b"
       },
       {
         "name": "punctuation.parenthesis.su-assembly",

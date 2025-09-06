@@ -1,8 +1,8 @@
 {
     "name": "suasm",
     "displayName": "Su-Assembly Syntax Highlighter",
-    "description": "Extensión para habilitar _syntax highlighting_ en arqui :D",
-    "version": "0.0.1",
+    "description": "Extensión para habilitar syntax highlighting en arqui :D",
+    "version": "0.1.1",
     "publisher": "3rdPix",
     "engines": {
       "vscode": "^1.60.0"

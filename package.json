@@ -2,12 +2,11 @@
     "name": "suasm",
     "displayName": "Su-Assembly Syntax Highlighter",
     "description": "Extensión para habilitar syntax highlighting en arqui :D",
-    "version": "0.1.1",
+    "version": "0.2.0",
     "publisher": "3rdPix",
     "engines": {
       "vscode": "^1.60.0"
     },
-    "publisher": "3rdPix",
     "icon": "images/su.png",
     "repository": {
         "type": "git",
@@ -18,27 +17,39 @@
         "url": "https://github.com/3rdPix/vscode-suassembly-syntax-highlighter/issues"
     },
     "categories": ["Programming Languages", "Language Packs"],
-    "contributes": {
-      "languages": [
-        {
-          "id": "suasm",
-          "aliases": ["Su-Assembly", "Su-Asm"],
-          "extensions": [".suasm"],
-          "configuration": "./language-configuration.json"
-        }
-      ],
-      "grammars": [
-        {
-          "language": "suasm",
-          "scopeName": "source.suasm",
-          "path": "./syntaxes/suasm.tmLanguage.json"
-        }
-      ],
-      "snippets": [
-            {
-                "language": "suasm",
-                "path": "./snippets/snippets.json"
-            }
+    "contributes":
+    {
+      "languages":
+        [
+          {
+            "id": "suasm",
+            "aliases": ["Su-Assembly", "Su-Asm"],
+            "extensions": [".suasm"],
+            "configuration": "./language-configuration.json"
+          }
+        ],
+      "grammars":
+        [
+          {
+            "language": "suasm",
+            "scopeName": "source.suasm",
+            "path": "./syntaxes/suasm.tmLanguage.json"
+          }
+        ],
+      "snippets":
+        [
+          {
+              "language": "suasm",
+              "path": "./snippets/snippets.json"
+          }
+        ],
+      "iconThemes":
+        [
+          {
+            "id": "su-icons",
+            "label": "Icono para archivos suasm",
+            "path": "./images/suasm-icons.json"
+          }
         ]
     }
   }

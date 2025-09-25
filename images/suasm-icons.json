@@ -1,0 +1,10 @@
+{
+  "iconDefinitions": {
+    "suasm": {
+      "iconPath": "./su-logo.svg"
+    }
+  },
+  "fileExtensions": {
+    "suasm": "suasm"
+  }
+}
